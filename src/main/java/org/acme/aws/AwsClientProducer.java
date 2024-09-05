@@ -27,6 +27,7 @@ public class AwsClientProducer {
         logger.info("profile: "+profile);
         if ("local".equals(profile)) {
             logger.info("Local profile and setting Mockito Object......");
+            //return null;
             return Mockito.mock(ServiceDiscoveryClient.class);
         } else {
             return ServiceDiscoveryClient.builder()

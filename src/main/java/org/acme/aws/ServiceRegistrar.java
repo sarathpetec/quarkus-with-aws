@@ -49,10 +49,10 @@ public class ServiceRegistrar {
 
         RegisterInstanceRequest request = RegisterInstanceRequest.builder()
                 .serviceId(SERVICE_ID)
-                .instanceId("feedservice-instance-" + instanceIp) // Use a unique ID, potentially based on IP or other identifier
+                .instanceId("test-instance-" + instanceIp) // Use a unique ID, potentially based on IP or other identifier
                 .attributes(Map.of(
                         "AWS_INSTANCE_IPV4", instanceIp, // Use the dynamically retrieved IP
-                        "AWS_INSTANCE_PORT", "56987"))
+                        "AWS_INSTANCE_PORT", "8091"))
                 .build();
 
         RegisterInstanceResponse response = serviceDiscoveryClient.registerInstance(request);

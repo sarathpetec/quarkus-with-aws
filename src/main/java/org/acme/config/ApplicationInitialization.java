@@ -26,9 +26,9 @@ public class ApplicationInitialization {
             return Uni.createFrom().item(() -> {
                 try {
                     serviceRegistrar.registerService();
-                    logger.info("FeedService successfully registered with AWS Cloud Map.");
+                    logger.info("TEST successfully registered with AWS Cloud Map.");
                 } catch (Exception e) {
-                    logger.error("Failed to register FeedService with AWS Cloud Map", e);
+                    logger.error("Failed to register TEST with AWS Cloud Map", e);
                 }
                 return null;
             });

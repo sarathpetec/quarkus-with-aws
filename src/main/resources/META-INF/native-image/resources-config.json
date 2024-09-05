@@ -1,0 +1,7 @@
+{
+  "resources": [
+    {"pattern": ".*\\.properties$"},
+    {"pattern": "META-INF/services/.*$"},
+    {"pattern": "META-INF/native/.*$"}
+  ]
+}
